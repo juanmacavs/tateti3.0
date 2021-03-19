@@ -1,0 +1,83 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 4px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+body .container button {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+body .container button :hover {
+  background-color: rgba(255, 0, 0, 0.555);
+  border-radius: 20px;
+}
+
+body .container button i {
+  display: none;
+  height: 100%;
+  width: 100%;
+  font-size: 50px;
+}
+
+body .container button.player1 i.player1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container button.player2 i.player2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container button i.player1 {
+  color: blue;
+}
+
+body .container i.player2 {
+  color: red;
+}
+
+.res {
+  font-size: 0.8em;
+  margin-top: 2em;
+  padding: 0.7em;
+  color: white;
+  background-color: #77d;
+}
+/*# sourceMappingURL=estilo.css.map */

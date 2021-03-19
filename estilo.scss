@@ -1,0 +1,60 @@
+@mixin iplayerh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    .container{
+        @include container();
+        button{
+            border-radius: 20px;
+            cursor: pointer;
+            :hover{
+                background-color: rgba(255, 0, 0, 0.555);
+                border-radius: 20px;
+            }
+            i{
+                display: none;
+                height: 100%;
+                width: 100%;
+                font-size: 50px;
+            }
+            &.player1{
+                i.player1{
+                    @include iplayerh();
+                }
+            }
+            &.player2{
+                i.player2{
+                    @include iplayerh();
+            }
+            i.player1{
+                color: blue;
+                }
+            }
+            i.player2{
+                color: red;
+            }
+        }
+    }    
+    .res{
+        font-size: 0.8em;
+        margin-top: 2em;
+        padding: 0.7em;
+        color: white;
+        background-color: #77d;
+    }
+}
